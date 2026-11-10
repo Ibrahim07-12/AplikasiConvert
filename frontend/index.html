@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Universal Converter</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">&gt;_</span><strong>Universal Converter</strong></div>
+        <span class="status-dot">● online</span>
+      </header>
+      <section class="workspace">
+        <div class="page-heading">
+          <div><p class="eyebrow">FILE TOOL / CONVERTER</p><h1>Convert your files</h1></div>
+          <button class="secondary-button" id="install-button" type="button" hidden>Install App</button>
+        </div>
+        <section class="panel">
+          <label class="drop-zone" id="drop-zone" for="file-input">
+            <span class="upload-mark">↑</span>
+            <strong>Drop files here</strong>
+            <span>or click to browse · max 25 MB per file</span>
+            <input id="file-input" type="file" multiple />
+          </label>
+          <div class="file-list" id="file-list" aria-live="polite">
+            <div class="empty-state">No files selected</div>
+          </div>
+          <div class="toolbar">
+            <label for="target-format">Convert to</label>
+            <select id="target-format" disabled></select>
+            <button id="convert-button" class="primary-button" type="button" disabled>Convert <span>↵</span></button>
+          </div>
+          <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
+          <p class="status-message" id="status" role="status" aria-live="polite"></p>
+        </section>
+        <footer><span>Temporary files are automatically deleted after processing.</span><kbd>Enter</kbd> Convert</footer>
+      </section>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
