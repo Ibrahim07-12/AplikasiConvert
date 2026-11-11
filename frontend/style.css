@@ -10,6 +10,9 @@ button { cursor: pointer; }
 .brand img { width: 32px; height: 32px; border-radius: 0; object-fit: cover; }
 .online-status { color: var(--green); font: 11px "JetBrains Mono", monospace; letter-spacing: .08em; }
 .online-status i { display: inline-block; width: 7px; height: 7px; margin-right: 6px; background: var(--green); border-radius: 50%; }
+.header-actions { display: flex; align-items: center; gap: 16px; }
+.install-button { padding: 8px 10px; color: var(--bg); background: var(--orange); border: 2px solid var(--orange); font: 700 10px "JetBrains Mono", monospace; }
+.install-button:hover { color: var(--orange); background: var(--bg); }
 .layout { width: min(100% - 48px, 1040px); margin: 0 auto; padding: 72px 0 96px; }
 .intro { max-width: 700px; margin-bottom: 48px; }
 .kicker, .section-label, .status-message, .empty-state, footer, .drop-zone span, .tool-card small { font: 11px "JetBrains Mono", monospace; letter-spacing: .08em; }
@@ -59,5 +62,5 @@ input[type="range"] { accent-color: var(--orange); }
 .status-message.error { color: #ff5f56; }
 .status-message.success { color: var(--green); }
 footer { display: flex; justify-content: space-between; padding: 18px 32px; color: var(--muted); border-top: 2px solid var(--border); }
-@media (max-width: 680px) { .site-header { padding: 0 18px; } .layout { width: min(100% - 32px, 1040px); padding: 48px 0 64px; } .tool-grid { grid-template-columns: repeat(2, 1fr); } footer { flex-direction: column; gap: 8px; padding: 18px; } }
+@media (max-width: 680px) { .site-header { padding: 0 18px; } .header-actions { gap: 8px; } .online-status { font-size: 0; } .online-status i { margin: 0; } .layout { width: min(100% - 32px, 1040px); padding: 48px 0 64px; } .tool-grid { grid-template-columns: repeat(2, 1fr); } footer { flex-direction: column; gap: 8px; padding: 18px; } }
 @media (max-width: 420px) { h1 { font-size: 48px; } .tool-grid { grid-template-columns: 1fr; } }

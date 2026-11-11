@@ -48,9 +48,12 @@ const runTool = document.querySelector("#run-tool");
 const progressBar = document.querySelector("#progress-bar");
 const statusMessage = document.querySelector("#status");
 const categoryLabel = document.querySelector("#category-label");
+const installButton = document.querySelector("#install-button");
+const connectionStatus = document.querySelector("#connection-status");
 let selectedFiles = [];
 let selectedTool = null;
 let currentCategory = "unknown";
+let deferredInstallPrompt = null;
 
 const extensionOf = (name) => name.split(".").pop().toLowerCase();
 const setStatus = (message, type = "") => {
@@ -203,4 +206,32 @@ runTool.addEventListener("click", async () => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && !runTool.disabled && event.target.tagName !== "SELECT") runTool.click();
 });
+
+function updateConnectionStatus() {
+  const online = navigator.onLine;
+  connectionStatus.innerHTML = `<i></i> ${online ? "ONLINE" : "OFFLINE"}`;
+  connectionStatus.style.color = online ? "var(--green)" : "var(--orange)";
+}
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  installButton.hidden = false;
+});
+
+installButton.addEventListener("click", async () => {
+  if (!deferredInstallPrompt) return;
+  deferredInstallPrompt.prompt();
+  const result = await deferredInstallPrompt.userChoice;
+  if (result.outcome === "accepted") installButton.hidden = true;
+  deferredInstallPrompt = null;
+});
+
+window.addEventListener("appinstalled", () => {
+  installButton.hidden = true;
+  setStatus("Flux installed. You can open it from your desktop or home screen.", "success");
+});
+window.addEventListener("online", updateConnectionStatus);
+window.addEventListener("offline", updateConnectionStatus);
+updateConnectionStatus();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");

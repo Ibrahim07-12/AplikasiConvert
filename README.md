@@ -8,6 +8,7 @@ PWA berbasis FastAPI dengan desain Brutalist Modern. Saat ini mendukung:
 - Batch conversion hingga 10 file -> ZIP
 - Drag & drop, dynamic format selector, progress, dan installable PWA
 - Image Tools: compress gambar JPG, PNG, dan WEBP
+- Install sebagai aplikasi desktop/mobile melalui PWA
 
 ## Menjalankan lokal
 
@@ -19,6 +20,19 @@ uvicorn app.main:app --reload
 ```
 
 Buka `http://127.0.0.1:8000`.
+
+## Install sebagai aplikasi
+
+Jalankan server melalui HTTPS atau `localhost`, lalu buka URL di Chrome/Edge.
+Klik tombol **INSTALL APP** di header jika muncul, atau gunakan menu browser
+**Install Flux / Add to Home Screen**. Setelah terpasang, Flux terbuka di window
+standalone tanpa address bar seperti aplikasi biasa.
+
+Shell aplikasi (UI, CSS, JavaScript, logo) tersedia offline setelah pernah dibuka.
+Proses konversi dan compress tetap membutuhkan koneksi ke server karena engine
+FastAPI/LibreOffice berjalan di backend online. Jika sedang offline, aplikasi
+masih dapat dibuka dan menampilkan status OFFLINE, tetapi operasi server akan
+ditunda sampai koneksi kembali.
 
 ### LibreOffice
 
