@@ -23,6 +23,7 @@ from .converter import (
 from .document_converter import convert_office_to_pdf
 from .format_mapping import FORMAT_MAPPING
 from .pdf_converter import convert_pdf_to_images
+from .tools.image_tools import compress_image
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / "frontend"
@@ -30,7 +31,7 @@ MAX_UPLOAD_SIZE = 25 * 1024 * 1024
 MAX_BATCH_FILES = 10
 SAFE_FILENAME = re.compile(r"[^A-Za-z0-9._-]+")
 
-app = FastAPI(title="Universal Converter", version="1.0.0")
+app = FastAPI(title="Flux — All-in-One File Toolkit", version="1.0.0")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
@@ -64,6 +65,12 @@ async def formats() -> dict[str, object]:
 @app.get("/health")
 async def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+def validate_image_upload(file: UploadFile) -> None:
+    """Reject unsupported image MIME types before writing temporary data."""
+    if file.content_type and not file.content_type.startswith("image/"):
+        raise HTTPException(status_code=415, detail="Upload harus berupa file gambar.")
 
 
 async def save_upload(file: UploadFile, directory: Path) -> Path:
@@ -143,6 +150,46 @@ async def convert(
         output_path,
         filename=download_name,
         media_type=download_type,
+        background=background_tasks,
+    )
+
+
+@app.post("/tools/image/compress")
+async def compress_image_endpoint(
+    background_tasks: BackgroundTasks,
+    file: Annotated[UploadFile, File(description="Gambar yang akan dikompres")],
+    quality: Annotated[int, Form(description="Quality 1 sampai 100")],
+) -> FileResponse:
+    """Compress one image and remove temporary files after download."""
+    validate_image_upload(file)
+    temporary_directory = Path(tempfile.mkdtemp(prefix="flux-compress-"))
+    try:
+        input_path = await save_upload(file, temporary_directory)
+        extension = Path(file.filename or "image.jpg").suffix.lower()
+        if extension not in {".jpg", ".jpeg", ".png", ".webp"}:
+            raise HTTPException(
+                status_code=415,
+                detail="Compress mendukung JPG, PNG, dan WEBP.",
+            )
+        output_extension = ".jpg" if extension == ".jpeg" else extension
+        output_path = temporary_directory / f"compressed{output_extension}"
+        compress_image(input_path, output_path, quality)
+    except HTTPException:
+        cleanup_directory(temporary_directory)
+        raise
+    except ConversionError as error:
+        cleanup_directory(temporary_directory)
+        raise HTTPException(status_code=422, detail=str(error)) from error
+    except OSError as error:
+        cleanup_directory(temporary_directory)
+        raise HTTPException(status_code=500, detail="Gagal memproses gambar.") from error
+    finally:
+        await file.close()
+
+    background_tasks.add_task(cleanup_directory, temporary_directory)
+    return FileResponse(
+        output_path,
+        filename=f"{Path(file.filename or 'image').stem}-compressed{output_extension}",
         background=background_tasks,
     )
 

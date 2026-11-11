@@ -1,12 +1,13 @@
-# Universal Converter
+# Flux — All-in-One File Toolkit
 
-PWA berbasis FastAPI dengan tema Technical Dark. Saat ini mendukung:
+PWA berbasis FastAPI dengan desain Brutalist Modern. Saat ini mendukung:
 
 - Gambar: PNG, JPG/JPEG, WEBP -> PNG, JPG, WEBP, PDF
 - PDF -> JPG atau PNG (semua halaman dikirim sebagai ZIP bila lebih dari satu)
 - Office: DOC/DOCX, XLS/XLSX, PPT/PPTX -> PDF melalui LibreOffice
 - Batch conversion hingga 10 file -> ZIP
 - Drag & drop, dynamic format selector, progress, dan installable PWA
+- Image Tools: compress gambar JPG, PNG, dan WEBP
 
 ## Menjalankan lokal
 
@@ -45,12 +46,22 @@ Tanpa LibreOffice, endpoint tetap berjalan dan mengembalikan pesan error yang je
 | GET | `/health` | Status server |
 | POST | `/convert` | Konversi satu file |
 | POST | `/convert/batch` | Konversi hingga 10 file menjadi ZIP |
+| POST | `/tools/image/compress` | Compress gambar dengan `quality` 1-100 |
 
 Request konversi menggunakan `multipart/form-data`:
 
 - `file`: satu file untuk `/convert`
 - `files`: satu atau beberapa file untuk `/convert/batch`
 - `target_format`: misalnya `pdf`, `png`, atau `jpg`
+
+Endpoint compress menggunakan:
+
+- `file`: gambar JPG, PNG, atau WEBP
+- `quality`: angka `1` sampai `100`
+
+Struktur saat ini menggunakan package `app/` sebagai backend aktif (setara dengan
+`backend/` pada blueprint awal) agar endpoint dokumen/PDF yang sudah ada tetap kompatibel.
+Folder `backend/` berisi adapter kompatibilitas untuk struktur blueprint tersebut.
 
 File temporary dibersihkan setelah response selesai dikirim. Batas setiap file adalah 25 MB.
 
@@ -80,11 +91,10 @@ docker run --rm universal-converter soffice --version
 ## Testing cepat
 
 1. Jalankan server dan buka halaman utama.
-2. Seret satu gambar, PDF, atau dokumen Office ke area upload.
-3. Pastikan pilihan format berubah sesuai ekstensi file.
-4. Pilih tujuan lalu klik **Convert**.
-5. Pilih beberapa gambar untuk menguji ZIP batch.
-6. Untuk pemasangan PWA, gunakan Chrome/Edge pada `localhost` atau HTTPS lalu pilih **Install App**.
+2. Seret gambar, PDF, atau dokumen Office ke area upload.
+3. Pilih tool seperti **Convert** atau **Compress**.
+4. Atur format/quality lalu klik **Run tool**.
+5. Untuk pemasangan PWA, gunakan Chrome/Edge pada `localhost` atau HTTPS lalu pilih **Install App**.
 
 Pemeriksaan otomatis yang digunakan:
 

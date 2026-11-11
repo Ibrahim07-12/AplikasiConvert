@@ -1,13 +1,13 @@
 {
-  "name": "Universal Converter",
-  "short_name": "Converter",
-  "description": "Konversi file antar format populer",
+  "name": "Flux — All-in-One File Toolkit",
+  "short_name": "Flux",
+  "description": "Convert, compress, and transform files online",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#2563eb",
+  "theme_color": "#0d1117",
   "background_color": "#0d1117",
   "orientation": "any",
   "icons": [
-    { "src": "/static/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "/static/icons/faviconapp.png", "sizes": "any", "type": "image/png", "purpose": "any maskable" }
   ]
 }

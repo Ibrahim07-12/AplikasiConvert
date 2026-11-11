@@ -1,5 +1,5 @@
-const CACHE_NAME = "universal-converter-v1";
-const APP_SHELL = ["/", "/static/styles.css", "/static/app.js", "/static/icons/icon.svg", "/manifest.webmanifest"];
+const CACHE_NAME = "flux-v1";
+const APP_SHELL = ["/", "/static/style.css", "/static/script.js", "/static/icons/faviconapp.png", "/manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
