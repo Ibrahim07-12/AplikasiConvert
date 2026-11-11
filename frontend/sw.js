@@ -1,4 +1,4 @@
-const CACHE_NAME = "flux-v2";
+const CACHE_NAME = "flux-v3";
 const APP_SHELL = [
   "/", "/static/style.css", "/static/script.js", "/static/icons/faviconapp.png",
   "/static/icons/icon-192.png", "/static/icons/icon-512.png", "/manifest.webmanifest"

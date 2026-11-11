@@ -220,7 +220,13 @@ window.addEventListener("beforeinstallprompt", (event) => {
 });
 
 installButton.addEventListener("click", async () => {
-  if (!deferredInstallPrompt) return;
+  if (!deferredInstallPrompt) {
+    setStatus(
+      "Install belum tersedia otomatis. Gunakan menu browser: Install Flux / Add to Home Screen.",
+      "error",
+    );
+    return;
+  }
   deferredInstallPrompt.prompt();
   const result = await deferredInstallPrompt.userChoice;
   if (result.outcome === "accepted") installButton.hidden = true;
