@@ -1,0 +1,772 @@
+([('Flux.exe',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\build\\Flux\\Flux.exe',
+   'EXECUTABLE'),
+  ('webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x64.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x64.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x86.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x86.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\Python.Runtime.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.dll',
+   'BINARY'),
+  ('python311.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll',
+   'BINARY'),
+  ('clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'BINARY'),
+  ('clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'BINARY'),
+  ('_decimal.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('select.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('lxml\\etree.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\etree.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\_elementpath.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\_elementpath.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\sax.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\sax.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\objectify.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\objectify.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\html\\diff.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\html\\diff.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\html\\_difflib.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\html\\_difflib.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\builder.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\builder.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingft.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_imagingft.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_imaging.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_webp.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_imagingtk.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_imagingcms.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingmath.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\PIL\\_imagingmath.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('pymupdf\\_mupdf.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pymupdf\\_mupdf.pyd',
+   'EXTENSION'),
+  ('pymupdf\\_extra.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pymupdf\\_extra.pyd',
+   'EXTENSION'),
+  ('_cffi_backend.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\_cffi_backend.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('pydantic_core\\_pydantic_core.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('watchfiles\\_rust_notify.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\watchfiles\\_rust_notify.pyd',
+   'EXTENSION'),
+  ('websockets\\speedups.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets\\speedups.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\url_parser.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\httptools\\parser\\url_parser.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('httptools\\parser\\parser.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\httptools\\parser\\parser.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('yaml\\_yaml.cp311-win_amd64.pyd',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\yaml\\_yaml.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('MSVCP140.dll', 'C:\\WINDOWS\\system32\\MSVCP140.dll', 'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Users\\IBRAHIM\\AppData\\Local\\Programs\\Python\\Python311\\python3.dll',
+   'BINARY'),
+  ('pymupdf\\mupdfcpp64.dll',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pymupdf\\mupdfcpp64.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\ucrtbase.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('app\\__init__.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\app\\__init__.py',
+   'DATA'),
+  ('app\\__pycache__\\__init__.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\__init__.cpython-311.pyc',
+   'DATA'),
+  ('app\\__pycache__\\converter.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\converter.cpython-311.pyc',
+   'DATA'),
+  ('app\\__pycache__\\document_converter.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\document_converter.cpython-311.pyc',
+   'DATA'),
+  ('app\\__pycache__\\format_mapping.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\format_mapping.cpython-311.pyc',
+   'DATA'),
+  ('app\\__pycache__\\main.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\main.cpython-311.pyc',
+   'DATA'),
+  ('app\\__pycache__\\pdf_converter.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\__pycache__\\pdf_converter.cpython-311.pyc',
+   'DATA'),
+  ('app\\converter.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\app\\converter.py',
+   'DATA'),
+  ('app\\document_converter.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\document_converter.py',
+   'DATA'),
+  ('app\\format_mapping.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\format_mapping.py',
+   'DATA'),
+  ('app\\main.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\app\\main.py',
+   'DATA'),
+  ('app\\pdf_converter.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\app\\pdf_converter.py',
+   'DATA'),
+  ('app\\tools\\__init__.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\__init__.py',
+   'DATA'),
+  ('app\\tools\\__pycache__\\__init__.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\__pycache__\\__init__.cpython-311.pyc',
+   'DATA'),
+  ('app\\tools\\__pycache__\\image_tools.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\__pycache__\\image_tools.cpython-311.pyc',
+   'DATA'),
+  ('app\\tools\\__pycache__\\pdf_tools.cpython-311.pyc',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\__pycache__\\pdf_tools.cpython-311.pyc',
+   'DATA'),
+  ('app\\tools\\image_tools.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\image_tools.py',
+   'DATA'),
+  ('app\\tools\\pdf_tools.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\app\\tools\\pdf_tools.py',
+   'DATA'),
+  ('frontend\\icons\\faviconapp.ico',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\icons\\faviconapp.ico',
+   'DATA'),
+  ('frontend\\icons\\faviconapp.png',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\icons\\faviconapp.png',
+   'DATA'),
+  ('frontend\\icons\\icon-192.png',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\icons\\icon-192.png',
+   'DATA'),
+  ('frontend\\icons\\icon-512.png',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\icons\\icon-512.png',
+   'DATA'),
+  ('frontend\\icons\\icon.svg',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\icons\\icon.svg',
+   'DATA'),
+  ('frontend\\index.html',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\frontend\\index.html',
+   'DATA'),
+  ('frontend\\manifest.webmanifest',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\frontend\\manifest.webmanifest',
+   'DATA'),
+  ('frontend\\script.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\frontend\\script.js',
+   'DATA'),
+  ('frontend\\style.css',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\frontend\\style.css',
+   'DATA'),
+  ('frontend\\sw.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi Convert\\frontend\\sw.js',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\build\\Flux\\base_library.zip',
+   'DATA'),
+  ('pptx\\templates\\docx-icon.emf',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\docx-icon.emf',
+   'DATA'),
+  ('pptx\\templates\\notesMaster.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\notesMaster.xml',
+   'DATA'),
+  ('pptx\\templates\\pptx-icon.emf',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\pptx-icon.emf',
+   'DATA'),
+  ('pptx\\templates\\generic-icon.emf',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\generic-icon.emf',
+   'DATA'),
+  ('pptx\\templates\\theme.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\theme.xml',
+   'DATA'),
+  ('pptx\\templates\\notes.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\notes.xml',
+   'DATA'),
+  ('pptx\\templates\\default.pptx',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\default.pptx',
+   'DATA'),
+  ('pptx\\templates\\xlsx-icon.emf',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pptx\\templates\\xlsx-icon.emf',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\app.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\app.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\theme\\theme1.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\theme\\theme1.xml',
+   'DATA'),
+  ('docx\\templates\\default.docx',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default.docx',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\_rels\\document.xml.rels',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\_rels\\document.xml.rels',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\numbering.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\numbering.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\document.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\document.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\_rels\\item1.xml.rels',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\_rels\\item1.xml.rels',
+   'DATA'),
+  ('docx\\templates\\default-settings.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-settings.xml',
+   'DATA'),
+  ('docx\\templates\\default-styles.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-styles.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\itemProps1.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\itemProps1.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\thumbnail.jpeg',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\thumbnail.jpeg',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\webSettings.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\webSettings.xml',
+   'DATA'),
+  ('docx\\templates\\default-header.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-header.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\fontTable.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\fontTable.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\core.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\core.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\styles.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\styles.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\item1.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\item1.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\settings.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\settings.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\[Content_Types].xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\[Content_Types].xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\_rels\\.rels',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\_rels\\.rels',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\stylesWithEffects.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\stylesWithEffects.xml',
+   'DATA'),
+  ('docx\\templates\\default-footer.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\templates\\default-footer.xml',
+   'DATA'),
+  ('docx\\py.typed',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\docx\\py.typed',
+   'DATA'),
+  ('cairosvg\\VERSION',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\cairosvg\\VERSION',
+   'DATA'),
+  ('webview\\js\\customize.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\js\\customize.js',
+   'DATA'),
+  ('webview\\js\\finish.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\js\\finish.js',
+   'DATA'),
+  ('webview\\js\\lib\\polyfill.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\js\\lib\\polyfill.js',
+   'DATA'),
+  ('webview\\js\\api.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\js\\api.js',
+   'DATA'),
+  ('webview\\lib\\pywebview-android.jar',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\lib\\pywebview-android.jar',
+   'DATA'),
+  ('webview\\js\\lib\\dom_json.js',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\webview\\js\\lib\\dom_json.js',
+   'DATA'),
+  ('pythonnet\\runtime\\Python.Runtime.deps.json',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.deps.json',
+   'DATA'),
+  ('pythonnet\\runtime\\Python.Runtime.xml',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.xml',
+   'DATA'),
+  ('websockets-17.4.dist-info\\top_level.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\top_level.txt',
+   'DATA'),
+  ('websockets-17.4.dist-info\\INSTALLER',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\INSTALLER',
+   'DATA'),
+  ('pydantic-2.14.3.dist-info\\METADATA',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\INSTALLER',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('websockets-17.4.dist-info\\RECORD',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.14.3.dist-info\\INSTALLER',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.5.1.dist-info\\INSTALLER',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\click-8.5.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\top_level.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('pydantic-2.14.3.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('click-8.5.1.dist-info\\RECORD',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\click-8.5.1.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\WHEEL',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\LICENSE',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\LICENSE',
+   'DATA'),
+  ('click-8.5.1.dist-info\\METADATA',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\click-8.5.1.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\entry_points.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('websockets-17.4.dist-info\\METADATA',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\METADATA',
+   'DATA'),
+  ('websockets-17.4.dist-info\\WHEEL',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\REQUESTED',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('pydantic-2.14.3.dist-info\\WHEEL',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info\\WHEEL',
+   'DATA'),
+  ('websockets-17.4.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('click-8.5.1.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\click-8.5.1.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\RECORD',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\RECORD',
+   'DATA'),
+  ('websockets-17.4.dist-info\\entry_points.txt',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\websockets-17.4.dist-info\\entry_points.txt',
+   'DATA'),
+  ('click-8.5.1.dist-info\\WHEEL',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\click-8.5.1.dist-info\\WHEEL',
+   'DATA'),
+  ('pydantic-2.14.3.dist-info\\RECORD',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\METADATA',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\setuptools-65.5.0.dist-info\\METADATA',
+   'DATA'),
+  ('cairocffi\\constants.py',
+   'C:\\Users\\IBRAHIM\\Desktop\\baim\\Aplikasi '
+   'Convert\\.venv\\Lib\\site-packages\\cairocffi\\constants.py',
+   'DATA')],)

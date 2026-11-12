@@ -7,6 +7,11 @@ from typing import Final
 
 from PIL import Image, UnidentifiedImageError
 
+try:
+    import cairosvg
+except (ImportError, OSError):  # Cairo is optional outside the Docker image.
+    cairosvg = None
+
 from .format_mapping import FORMAT_MAPPING
 
 SUPPORTED_FORMATS: Final[dict[str, tuple[str, ...]]] = {
@@ -42,6 +47,8 @@ def get_file_category(filename: str, content_type: str | None) -> str | None:
         return "image"
     if extension in {"doc", "docx", "xls", "xlsx", "ppt", "pptx"}:
         return "document"
+    if extension in {"html", "htm"}:
+        return "html"
     return None
 
 
@@ -58,7 +65,16 @@ def convert_image(input_path: Path, output_path: Path, target_format: str) -> No
         raise ConversionError(f"Format tujuan tidak didukung: {target_format}")
 
     try:
-        with Image.open(input_path) as image:
+        if input_path.suffix.lower() == ".svg":
+            if cairosvg is None:
+                raise ConversionError(
+                    "SVG membutuhkan CairoSVG dan library Cairo pada perangkat ini."
+                )
+            png_bytes = cairosvg.svg2png(url=str(input_path))
+            image_context = Image.open(__import__("io").BytesIO(png_bytes))
+        else:
+            image_context = Image.open(input_path)
+        with image_context as image:
             output_format = EXTENSION_TO_PILLOW_FORMAT[normalized_target]
             if output_format == "PDF":
                 image.convert("RGB").save(output_path, format="PDF")

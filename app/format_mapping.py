@@ -1,20 +1,20 @@
-"""Single source of truth for supported source and target extensions."""
-
-from __future__ import annotations
+"""Backend mirror of the frontend dual format mapping."""
 
 from typing import Final
 
-
 FORMAT_MAPPING: Final[dict[str, tuple[str, ...]]] = {
-    "jpg": ("png", "webp", "pdf"),
-    "jpeg": ("png", "webp", "pdf"),
-    "png": ("jpg", "webp", "pdf"),
-    "webp": ("jpg", "png", "pdf"),
-    "pdf": ("jpg", "png"),
-    "docx": ("pdf",),
-    "doc": ("pdf",),
-    "xlsx": ("pdf",),
-    "xls": ("pdf",),
-    "pptx": ("pdf",),
-    "ppt": ("pdf",),
+    "jpg": ("png", "webp", "pdf", "svg"),
+    "jpeg": ("png", "webp", "pdf", "svg"),
+    "png": ("jpg", "webp", "pdf", "svg"),
+    "webp": ("jpg", "png", "pdf", "svg"),
+    "svg": ("png", "jpg", "pdf"),
+    "pdf": ("jpg", "png", "docx", "xlsx", "pptx"),
+    "docx": ("pdf", "jpg", "png"),
+    "doc": ("pdf", "jpg", "png"),
+    "xlsx": ("pdf", "csv", "jpg"),
+    "xls": ("pdf", "csv", "jpg"),
+    "pptx": ("pdf", "jpg", "png", "docx"),
+    "ppt": ("pdf", "docx", "jpg", "png"),
+    "html": ("pdf", "jpg", "png"),
+    "htm": ("pdf", "jpg", "png"),
 }

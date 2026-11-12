@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="icon" type="image/png" href="/static/icons/faviconapp.png" />
+    <link rel="apple-touch-icon" href="/static/icons/faviconapp.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Flux — All-in-One File Toolkit</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Flux home">
+        <img src="/static/icons/faviconapp.png" alt="" />
+        <span>FLUX</span>
+      </a>
+      <div class="header-actions">
+        <button class="install-button" id="install-button" type="button">INSTALL APP</button>
+        <span class="online-status" id="connection-status"><i></i> ONLINE</span>
+      </div>
+    </header>
+    <main class="layout">
+      <section class="intro">
+        <p class="kicker">ALL-IN-ONE FILE TOOLKIT</p>
+        <h1>Make files<br /><em>move faster.</em></h1>
+        <p class="intro-copy">Convert, compress, and transform files with a focused toolkit built for speed.</p>
+      </section>
+
+      <section class="workspace" aria-label="File workspace">
+        <label class="drop-zone" id="drop-zone" for="file-input">
+          <span class="drop-symbol">+</span>
+          <strong>Drop files here</strong>
+          <span>or click to browse · up to 25 MB per file</span>
+          <input id="file-input" type="file" multiple />
+        </label>
+        <div class="file-list" id="file-list" aria-live="polite">
+          <p class="empty-state">No files selected</p>
+        </div>
+        <section class="tool-section" aria-labelledby="tools-heading">
+          <div class="section-label"><h2 id="tools-heading">AVAILABLE TOOLS</h2><span id="category-label">—</span></div>
+          <div class="tool-grid" id="tool-grid"></div>
+        </section>
+        <section class="dynamic-tool" id="dynamic-tool" hidden>
+          <div class="section-label"><h2 id="tool-title">TOOL SETTINGS</h2><button id="close-tool" type="button">×</button></div>
+          <div id="tool-controls"></div>
+          <button class="primary-button" id="run-tool" type="button" disabled>Run tool <span>↵</span></button>
+        </section>
+        <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
+        <p class="status-message" id="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer><span>FLUX / ONLINE FILE TOOLKIT</span><span>Temporary files are deleted after processing.</span></footer>
+    <script src="/static/script.js" defer></script>
+  </body>
+</html>

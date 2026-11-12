@@ -6,6 +6,7 @@ import re
 import shutil
 import tempfile
 import zipfile
+import mimetypes
 from pathlib import Path
 from typing import Annotated
 
@@ -24,6 +25,15 @@ from .document_converter import convert_office_to_pdf
 from .format_mapping import FORMAT_MAPPING
 from .pdf_converter import convert_pdf_to_images
 from .tools.image_tools import compress_image
+from .tools.image_tools import (
+    crop_image,
+    image_to_svg,
+    remove_background,
+    resize_image,
+    transform_image,
+    watermark_image,
+)
+from .tools.pdf_tools import pdf_to_office, pdf_tool
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / "frontend"
@@ -192,6 +202,150 @@ async def compress_image_endpoint(
         filename=f"{Path(file.filename or 'image').stem}-compressed{output_extension}",
         background=background_tasks,
     )
+
+
+@app.post("/tools/run")
+async def run_tool(
+    background_tasks: BackgroundTasks,
+    files: Annotated[list[UploadFile], File(description="Input tool")],
+    tool: Annotated[str, Form(description="Nama tool")],
+    target_format: Annotated[str, Form()] = "png",
+    width: Annotated[int, Form()] = 800,
+    height: Annotated[int, Form()] = 600,
+    left: Annotated[int, Form()] = 0,
+    top: Annotated[int, Form()] = 0,
+    right: Annotated[int, Form()] = 0,
+    bottom: Annotated[int, Form()] = 0,
+    angle: Annotated[int, Form()] = 90,
+    pages: Annotated[str, Form()] = "",
+    text: Annotated[str, Form()] = "",
+    password: Annotated[str, Form()] = "",
+    quality: Annotated[int, Form()] = 75,
+) -> FileResponse:
+    """Run a mapped tool and return its generated file."""
+    if not files or len(files) > MAX_BATCH_FILES:
+        raise HTTPException(status_code=400, detail="Pilih antara 1 sampai 10 file.")
+
+    temporary_directory = Path(tempfile.mkdtemp(prefix="flux-tool-"))
+    try:
+        input_paths = []
+        for file in files:
+            input_paths.append(await save_upload(file, temporary_directory))
+            await file.close()
+        extension = Path(input_paths[0]).suffix.lower().lstrip(".")
+        category = get_file_category(files[0].filename or "", files[0].content_type)
+        output_paths: list[Path]
+
+        if category == "image":
+            output_extension = target_format.lower().lstrip(".") if tool == "convert" else (
+                "png" if tool == "remove-bg" else extension
+            )
+            output_path = temporary_directory / f"result.{output_extension}"
+            if tool == "convert":
+                if output_extension == "svg":
+                    image_to_svg(input_paths[0], output_path)
+                else:
+                    convert_image(input_paths[0], output_path, output_extension)
+            elif tool == "compress":
+                compress_image(input_paths[0], output_path, quality)
+            elif tool == "resize":
+                resize_image(input_paths[0], output_path, width, height)
+            elif tool == "crop":
+                crop_image(input_paths[0], output_path, left, top, right, bottom)
+            elif tool in {"rotate", "flip", "grayscale"}:
+                transform_image(input_paths[0], output_path, tool, angle)
+            elif tool == "watermark":
+                watermark_image(input_paths[0], output_path, text)
+            elif tool == "remove-bg":
+                remove_background(input_paths[0], output_path)
+            else:
+                raise ConversionError(f"Image tool belum didukung: {tool}")
+            output_paths = [output_path]
+        elif category == "pdf":
+            if tool == "convert" and target_format in {"docx", "xlsx", "pptx"}:
+                output_paths = [
+                    pdf_to_office(input_paths[0], temporary_directory, target_format)
+                ]
+            else:
+                output_paths = pdf_tool(
+                    input_paths, temporary_directory, tool, target_format, pages, angle, password
+                )
+        elif category == "document":
+            if tool == "compress" or (tool == "convert" and target_format == "pdf"):
+                output_paths = [convert_office_to_pdf(input_paths[0], temporary_directory)]
+            elif tool == "convert" and target_format in {"jpg", "png"}:
+                pdf_path = convert_office_to_pdf(input_paths[0], temporary_directory)
+                output_paths = pdf_tool(
+                    [pdf_path], temporary_directory, "convert", target_format
+                )
+            elif tool == "convert" and target_format in {"docx", "xlsx", "pptx"}:
+                pdf_path = convert_office_to_pdf(input_paths[0], temporary_directory)
+                output_paths = [
+                    pdf_to_office(pdf_path, temporary_directory, target_format)
+                ]
+            elif tool == "extract-images" and extension in {"docx", "pptx"}:
+                output_paths = [_extract_office_images(input_paths[0], temporary_directory)]
+            else:
+                raise ConversionError(
+                    "Tool dokumen ini membutuhkan format atau engine yang belum tersedia."
+                )
+        elif category == "html":
+            if tool == "minify":
+                output = temporary_directory / "minified.html"
+                content = input_paths[0].read_text(encoding="utf-8")
+                output.write_text(re.sub(r">\s+<", "><", content).strip(), encoding="utf-8")
+                output_paths = [output]
+            elif tool == "convert" and target_format == "pdf":
+                output_paths = [convert_office_to_pdf(input_paths[0], temporary_directory)]
+            elif tool in {"convert", "screenshot"} and target_format in {"jpg", "png"}:
+                pdf_path = convert_office_to_pdf(input_paths[0], temporary_directory)
+                output_paths = pdf_tool(
+                    [pdf_path], temporary_directory, "convert", target_format
+                )
+            else:
+                raise ConversionError(
+                    "HTML screenshot membutuhkan browser engine; gunakan Convert ke PDF."
+                )
+        else:
+            raise ConversionError("Tool untuk jenis file ini belum tersedia.")
+
+        if len(output_paths) != 1:
+            raise ConversionError("Tool menghasilkan output yang tidak valid.")
+        output_path = output_paths[0]
+        media_type = mimetypes.guess_type(output_path.name)[0] or "application/octet-stream"
+        download_name = output_path.name
+    except HTTPException:
+        cleanup_directory(temporary_directory)
+        raise
+    except ConversionError as error:
+        cleanup_directory(temporary_directory)
+        raise HTTPException(status_code=422, detail=str(error)) from error
+    except OSError as error:
+        cleanup_directory(temporary_directory)
+        raise HTTPException(status_code=500, detail="Tool gagal memproses file.") from error
+
+    background_tasks.add_task(cleanup_directory, temporary_directory)
+    return FileResponse(
+        output_path,
+        filename=download_name,
+        media_type=media_type,
+        background=background_tasks,
+    )
+
+
+def _extract_office_images(input_path: Path, output_directory: Path) -> Path:
+    """Extract embedded media from DOCX/PPTX archives into a ZIP."""
+    media_prefix = "word/media/" if input_path.suffix.lower() == ".docx" else "ppt/media/"
+    archive_path = output_directory / "extracted-images.zip"
+    with zipfile.ZipFile(input_path) as source, zipfile.ZipFile(
+        archive_path, "w", zipfile.ZIP_DEFLATED
+    ) as output:
+        members = [member for member in source.namelist() if member.startswith(media_prefix)]
+        if not members:
+            raise ConversionError("Tidak ada gambar tertanam di file Office.")
+        for member in members:
+            output.writestr(Path(member).name, source.read(member))
+    return archive_path
 
 
 @app.post("/api/convert/batch")
